@@ -1,0 +1,27 @@
+{
+  "name": "abap-doc-export",
+  "version": "1.0.0",
+  "description": "Generate a HTML export from ABAP Doc comments",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sirius-A/abap-doc-export.git"
+  },
+  "keywords": [
+    "abap",
+    "sap",
+    "doc",
+    "documentation",
+    "abapGit"
+  ],
+  "author": "Fabio Zuber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sirius-A/abap-doc-export/issues"
+  },
+  "homepage": "https://github.com/Sirius-A/abap-doc-export#readme"
+}
