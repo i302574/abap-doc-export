@@ -4,9 +4,9 @@ I just had this idea and created this repo :sweat_smile:.
 --- 
 
 # abap-doc-export
-Generates a HTML export from ABAP Doc comments within abap source code
+Generates a HTML export from ABAP Doc comments within abap source code files
 
-[ABAP Doc](https://blogs.sap.com/2013/04/29/abap-doc/) allows documentation of ABAP source code right within the code itself. 
+[ABAP Doc](https://blogs.sap.com/2013/04/29/abap-doc/) allows documentation of ABAP source code right within the code itself. The documentation can be exported to HTML files in Eclipse ADT. ADT only allows exports form classes and packages. It also requires connection to a SAP System and can not be automated easily.
 
-The documentation can be exported to HTML files in Eclipse ADT. This utility allows to generate the documentation from any abap source. 
+This utility generates the documentation export from any abap source. 
 The main purpose of abap-doc-export is to be used in CI of an [abapGit](http://abapgit.org) project.
