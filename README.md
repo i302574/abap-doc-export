@@ -1,5 +1,5 @@
 # Work in progress!
-I just had this idea and opened this repo :sweat_smile:.
+I just had this idea and created this repo :sweat_smile:.
 
 --- 
 
