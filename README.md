@@ -1,4 +1,6 @@
 # Work in progress!
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Sirius-A/abap-doc-export.svg)](https://greenkeeper.io/)
 I just had this idea and created this repo :sweat_smile:.
 
 ---
