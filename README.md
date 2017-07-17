@@ -14,3 +14,8 @@ Generates a HTML export from ABAP Doc comments within abap source code files
 
 This utility generates the documentation export from any abap source. 
 The main purpose of abap-doc-export is to be used in CI of an [abapGit](http://abapgit.org) project.
+
+## Usage 
+1. npm i
+2. npm run compile
+3. npm start <folder_path> (i.e. npm start abap-samples)

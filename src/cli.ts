@@ -2,6 +2,7 @@
 import * as yargs from 'yargs'
 import * as fs from "fs";
 import File from "./file";
+import Export from "./export";
 
 const argv = yargs
     .usage('Usage: $0 filename')
@@ -10,10 +11,10 @@ const argv = yargs
     .alias('h', 'help')
     .argv;
 
-console.dir(argv[0]);
+console.dir(argv._[0]);
 
-
-function readFiles(dir: string, pre = ""): File[] {
+console.dir(readFiles(argv._[0]));
+function readFiles(dir: string): File[] {
     let files = fs.readdirSync(dir);
     let out: File[] = [];
 
@@ -22,9 +23,9 @@ function readFiles(dir: string, pre = ""): File[] {
 
         if (fs.lstatSync(full).isFile()) {
             let contents = fs.readFileSync(full, "utf8");
-            out.push(new File(pre + file, contents));
+            out.push(new File(file, contents));
         } else {
-            out = out.concat(readFiles(full, pre + file + "/"));
+            out = out.concat(readFiles(full + "/"));
         }
     }
     return out;
