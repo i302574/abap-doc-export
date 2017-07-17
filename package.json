@@ -5,10 +5,12 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "start": "node src/index.js",
-    "compile" : "tsc --pretty"
+    "start": "node dist/cli.js",
+    "compile": "tsc --pretty"
   },
-
+  "bin": {
+    "abap-doc-export": "./dist/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sirius-A/abap-doc-export.git"
@@ -27,6 +29,11 @@
   },
   "homepage": "https://github.com/Sirius-A/abap-doc-export#readme",
   "devDependencies": {
+    "@types/node": "^8.0.13",
+    "@types/yargs": "^8.0.1",
     "typescript": "^2.4.1"
+  },
+  "dependencies": {
+    "yargs": "^8.0.2"
   }
 }
