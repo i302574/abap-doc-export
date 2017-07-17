@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import yargs from 'yargs'
+import * as yargs from 'yargs'
 import * as fs from "fs";
 import File from "./file";
 
-const argv = require("yargs")
+const argv = yargs
     .usage('Usage: $0 filename')
     .demandCommand(1)
     .help('h')
